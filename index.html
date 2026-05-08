@@ -437,9 +437,16 @@
         .footer-sep { margin: 0 0.5rem; }
 
         .nav-logo {
-            height: 38px;
+            height: 32px;
             width: auto;
             vertical-align: middle;
+            filter: brightness(0) invert(1);
+            opacity: 0.88;
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
         }
 
         .about-inner {
@@ -478,7 +485,10 @@
 <body>
 
 <nav>
-    <span class="nav-brand">Strøm Epitecphro</span>
+    <div class="nav-left">
+        <img src="mpcu_logo_mark.svg" alt="mpcu.no" class="nav-logo">
+        <span class="nav-brand">Strøm Epitecphro</span>
+    </div>
     <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'nav'})">Bestill time</a>
 </nav>
 

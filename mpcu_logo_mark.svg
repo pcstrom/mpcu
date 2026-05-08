@@ -1,0 +1,32 @@
+<svg viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    mpcu.no – logomark
+    Proporsjoner basert på det gyldne snitt φ = (1+√5)/2 ≈ 1.618034
+
+    Basis: sirkelradius r = 60
+    Mellomrom  g = r/φ      ≈ 37.08
+    Buehøyde   H = 2rφ      ≈ 194.16   →  H / (2r) = φ
+    Sagitta    s = r/φ²     ≈ 22.92    →  g / s    = φ
+    Rekke      g : r : (r+g) geometrisk med kvotient φ
+
+    Alle tre mellomrom (tak→sirkel, bue→sirkel, buens sagitta) er φ-deriverte.
+  -->
+
+  <!-- Tak + bue (kombinert sti) -->
+  <path d="M 258.5,40 L 124.4,40 A 217,217 0 0,0 124.4,234.2"
+        fill="none"
+        stroke="#1a1a1a"
+        stroke-width="6.5"
+        stroke-linecap="round"
+        stroke-linejoin="miter"/>
+
+  <!-- Sirkel (øyet) -->
+  <circle cx="198.5" cy="137.1" r="60"
+          fill="none"
+          stroke="#1a1a1a"
+          stroke-width="6.5"/>
+
+  <!-- Pupill – avstand fra sentrum = s = r/φ², rettet mot øvre høyre -->
+  <circle cx="213.6" cy="119.7" r="6.5"
+          fill="#1a1a1a"/>
+</svg>
