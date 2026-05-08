@@ -345,22 +345,54 @@
         footer a:hover { color: rgba(255,255,255,0.75); }
         .footer-sep { margin: 0 0.5rem; }
 
+        .nav-logo {
+            height: 38px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .about-inner {
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .about-photo {
+            flex: 0 0 150px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 3px solid var(--border);
+            box-shadow: 0 2px 10px rgba(46,40,32,0.12);
+        }
+
+        .about-text { flex: 1; }
+
+        .hero-badge a { color: inherit; text-decoration: none; }
+        .hero-badge a:hover { text-decoration: underline; }
+        .rating-text a { color: inherit; text-decoration: none; }
+        .rating-text a:hover { text-decoration: underline; }
+
         @media (max-width: 600px) {
             .stats { gap: 2rem; }
             .hero { padding: 3.5rem 1.5rem 3rem; }
             section { padding: 3rem 1.5rem; }
+            .about-inner { flex-direction: column; align-items: center; text-align: center; }
+            .about-photo { flex: 0 0 120px; width: 120px; height: 120px; }
         }
     </style>
 </head>
 <body>
 
 <nav>
-    <span class="nav-brand">Per Christian – Matematikk</span>
+    <span class="nav-brand"><img src="logo1.png" alt="Per Christian – Matematikk" class="nav-logo"></span>
     <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn" target="_blank" rel="noopener">Bestill time</a>
 </nav>
 
 <section class="hero">
-    <div class="hero-badge">⭐ 5/5 &nbsp;·&nbsp; 32 anmeldelser</div>
+    <div class="hero-badge"><a href="https://www.superprof.no/lektor-sensor-matematikk-ars-erfaring-hjelp-til-eksamen-bedre-karakterer-tryggere-problemlosning.html" target="_blank" rel="noopener">⭐ 5/5 &nbsp;·&nbsp; 32 anmeldelser</a></div>
     <h1>Privatundervisning i matematikk<br>for videregående skole</h1>
     <p class="hero-sub">Tydelige forklaringer, bedre struktur og tryggere problemløsning – med en lektor og sensor som kjenner faget og vet hva eksamen krever.</p>
     <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn btn-large" target="_blank" rel="noopener">Bestill din første time →</a>
@@ -386,8 +418,13 @@
     <div class="container">
         <div class="section-label">Om meg</div>
         <h2>Lektor og sensor med 20 års erfaring</h2>
-        <p>Jeg er lektor i matematikk med undervisningserfaring fra grunnskole, videregående og høyere utdanning. I tillegg har jeg erfaring som sensor ved skriftlig og muntlig eksamen – noe som gir meg et konkret bilde av hva som faktisk forventes av elevene.</p>
-        <p>Mange av dem jeg hjelper ønsker å bestå, løfte karakteren eller bli tryggere fram mot prøve og eksamen. Jeg passer særlig godt for elever som trenger tydelige forklaringer, bedre struktur i arbeidet og hjelp til å forstå hva som faktisk forventes i matematikkfaget.</p>
+        <div class="about-inner">
+            <img src="profilbilde1.jpeg" alt="Per Christian" class="about-photo">
+            <div class="about-text">
+                <p>Jeg er lektor i matematikk med undervisningserfaring fra grunnskole, videregående og høyere utdanning. I tillegg har jeg erfaring som sensor ved skriftlig og muntlig eksamen – noe som gir meg et konkret bilde av hva som faktisk forventes av elevene.</p>
+                <p>Mange av dem jeg hjelper ønsker å bestå, løfte karakteren eller bli tryggere fram mot prøve og eksamen. Jeg passer særlig godt for elever som trenger tydelige forklaringer, bedre struktur i arbeidet og hjelp til å forstå hva som faktisk forventes i matematikkfaget.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -468,7 +505,7 @@
         <h2>Hva elevene sier</h2>
         <div class="rating-summary">
             <span class="stars-big">★★★★★</span>
-            <span class="rating-text">5/5 · 32 anmeldelser på Superprof</span>
+            <span class="rating-text"><a href="https://www.superprof.no/lektor-sensor-matematikk-ars-erfaring-hjelp-til-eksamen-bedre-karakterer-tryggere-problemlosning.html" target="_blank" rel="noopener">5/5 · 32 anmeldelser på Superprof ↗</a></span>
         </div>
         <div class="review-grid">
             <div class="review-card">
@@ -503,6 +540,8 @@
         © 2025 Per Christian &nbsp;·&nbsp; Privatundervisning i matematikk
         <span class="footer-sep">·</span>
         <a href="mailto:pc@mpcu.no">pc@mpcu.no</a>
+        <span class="footer-sep">·</span>
+        Org. nr. 928 973 042 – Strøm Epitecphro
         <span class="footer-sep">·</span>
         <a href="https://epitecphro-my.sharepoint.com/:b:/g/personal/pc_mpcu_no/IQClG9r6yn2AQ5XDnKpOiYP2Ab1s4b5l6EK20vo4bMeZSHk?e=ac0Pbf" target="_blank" rel="noopener">Personvernerklæring</a>
     </p>
