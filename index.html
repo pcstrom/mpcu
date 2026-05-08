@@ -117,15 +117,23 @@
             font-family: sans-serif;
         }
 
+        .hero-cta-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
         .hero-photo {
-            width: 88px;
-            height: 88px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             object-fit: cover;
             object-position: top center;
-            border: 3px solid var(--border);
-            box-shadow: 0 2px 12px rgba(46,40,32,0.12);
-            margin-bottom: 1.5rem;
+            border: 2px solid var(--border);
+            box-shadow: 0 2px 10px rgba(46,40,32,0.12);
+            flex-shrink: 0;
         }
 
         .stats {
@@ -476,10 +484,12 @@
 
 <section class="hero">
     <div class="hero-badge"><a href="https://www.superprof.no/lektor-sensor-matematikk-ars-erfaring-hjelp-til-eksamen-bedre-karakterer-tryggere-problemlosning.html" target="_blank" rel="noopener">⭐ 5/5 &nbsp;·&nbsp; 32 anmeldelser</a></div>
-    <img src="profilbilde1.jpeg" alt="Per Christian" class="hero-photo">
     <h1>Privatundervisning i matematikk<br>for videregående skole</h1>
     <p class="hero-sub">Tydelige forklaringer, bedre struktur og tryggere problemløsning – med en lektor og sensor som kjenner faget og vet hva eksamen krever.</p>
-    <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn btn-large" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill din første time med Per Christian →</a>
+    <div class="hero-cta-row">
+        <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn btn-large" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill din første time med Per Christian →</a>
+        <img src="profilbilde1.jpeg" alt="Per Christian" class="hero-photo">
+    </div>
     <span class="hero-note">Online via Teams eller Google Meet &nbsp;·&nbsp; Tilpasses ditt nivå og dine mål</span>
 </section>
 
