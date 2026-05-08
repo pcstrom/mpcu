@@ -30,11 +30,16 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .logo-banner {
+                .site-title {
             display: block;
-            margin: 0 auto;
-            width: auto;
-            max-width: min(420px, 88%);
+            font-family: 'sabon', Georgia, 'Times New Roman', serif;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 0 2rem;
         }
 
         .site-nav {
@@ -137,9 +142,7 @@
 <body>
 
 <header>
-    <a href="../index.html">
-        <img src="../banner4.png" alt="Halv Mater" class="logo-banner">
-    </a>
+    <a href="../index.html" class="site-title">Halv Mater</a>
     <nav class="site-nav">
         <a href="../forfattere/">Forfattere</a>
         <a href="./" class="active">Anmeldelser</a>

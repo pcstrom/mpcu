@@ -31,11 +31,16 @@
             border-bottom: 1px solid var(--border);
         }
 
-        .logo-banner {
+        .site-title {
             display: block;
-            margin: 0 auto;
-            width: auto;
-            max-width: min(420px, 88%);
+            font-family: 'sabon', Georgia, 'Times New Roman', serif;
+            font-size: 2rem;
+            font-weight: normal;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.5rem 0 2rem;
         }
 
         .site-nav {
@@ -109,6 +114,7 @@
             font-size: 1rem;
             line-height: 1.9;
             color: var(--text);
+            text-align: center;
         }
 
         .buy-label {
@@ -224,7 +230,7 @@
 <body>
 
 <header>
-    <img src="banner4.png" alt="Halv Mater" class="logo-banner">
+    <span class="site-title">Halv Mater</span>
     <nav class="site-nav">
         <a href="forfattere/">Forfattere</a>
         <a href="anmeldelser/">Anmeldelser</a>
