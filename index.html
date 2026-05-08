@@ -278,6 +278,70 @@
             line-height: 1.6;
         }
 
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.8rem;
+            font-size: 0.96rem;
+        }
+
+        .price-table th {
+            font-family: sans-serif;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-light);
+            border-bottom: 2px solid var(--border);
+            padding: 0.5rem 0.6rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .price-table td {
+            padding: 0.85rem 0.6rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        .price-table td:last-child {
+            font-family: sans-serif;
+            font-weight: 700;
+            white-space: nowrap;
+            text-align: right;
+            color: var(--dark);
+        }
+
+        .price-table td.free { color: var(--accent); }
+
+        .services { background: var(--card); }
+
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.8rem;
+        }
+
+        .content-table td {
+            padding: 0.85rem 0.6rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+            font-size: 0.94rem;
+            line-height: 1.65;
+        }
+
+        .content-table .content-label {
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 0.87rem;
+            color: var(--dark);
+            white-space: nowrap;
+            width: 30%;
+        }
+
+        @media (max-width: 540px) {
+            .content-table .content-label { white-space: normal; }
+        }
+
         .reviews { background: var(--bg-warm); }
 
         .rating-summary {
@@ -440,8 +504,8 @@
     <div class="container">
         <div class="section-label">Undervisning</div>
         <h2>Slik jobber vi</h2>
-        <p>I timene jobber vi strukturert og konkret med det du trenger hjelp til. Jeg forklarer fremgangsmåter tydelig, hjelper deg å se sammenhenger i faget og viser hva som forventes i begrunnelser og oppsett – særlig med tanke på eksamen.</p>
-        <p>Målet er ikke bare å komme frem til riktig svar, men å forstå hvordan du kan jobbe videre på egen hånd.</p>
+        <p>Jeg tilbyr strukturert én-til-én-undervisning i matematikk for elever i videregående skole og privatister. Undervisningen kan brukes til jevn faglig oppfølging, forberedelse til prøver, eksamensrettet arbeid eller målrettet arbeid med konkrete hull i forståelsen.</p>
+        <p>Som del av oppfølgingen kan vi kartlegge elevens nivå, lage en enkel individuell plan, arbeide med eksamensstrategi og følge utviklingen over tid. Undervisningen tilpasses den enkelte eleven, med vekt på forståelse, metodevalg og hvordan eleven selv kan kjenne igjen strukturer i oppgavene.</p>
         <div class="feature-grid">
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
@@ -486,27 +550,40 @@
 <section class="pricing">
     <div class="container">
         <div class="section-label">Priser</div>
-        <h2>Enkle og forutsigbare priser</h2>
-        <div class="price-grid">
-            <div class="price-card">
-                <div class="price-label">Enkelttime</div>
-                <div class="price-amount">600</div>
-                <div class="price-unit">kr / time</div>
-            </div>
-            <div class="price-card featured">
-                <div class="price-label">Pakke – 5 timer</div>
-                <div class="price-amount">2 800</div>
-                <div class="price-unit">kr totalt</div>
-                <div class="price-detail">Spar 200 kr · fast uketid</div>
-            </div>
-            <div class="price-card">
-                <div class="price-label">Pakke – 10 timer</div>
-                <div class="price-amount">5 500</div>
-                <div class="price-unit">kr totalt</div>
-                <div class="price-detail">Spar 500 kr · fast uketid</div>
-            </div>
-        </div>
-        <p class="price-note">Betaling skjer via Vipps-lenke som sendes etter gjennomført time. For pakker faktureres ved oppstart. Kurspakker forutsetter fast opplegg og vanlige rammer for avbestilling.</p>
+        <h2>Priser for undervisning</h2>
+        <p>Jeg tilbyr individuell nettundervisning i matematikk, særlig rettet mot elever i videregående skole og privatister. Undervisningen tilpasses elevens nivå, mål og tid fram mot prøver eller eksamen.</p>
+        <table class="price-table">
+            <thead>
+                <tr><th>Tjeneste</th><th>Pris</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Kort avklaringssamtale, inntil 20 min</td><td class="free">Gratis</td></tr>
+                <tr><td>Undervisning, 60 min</td><td>750 kr</td></tr>
+                <tr><td>Undervisning, 90 min</td><td>1 100 kr</td></tr>
+                <tr><td>Eksamensrettet intensivøkt, 120 min</td><td>1 450 kr</td></tr>
+                <tr><td>Klippekort 5 × 60 min</td><td>3 600 kr</td></tr>
+                <tr><td>Klippekort 10 × 60 min</td><td>7 000 kr</td></tr>
+            </tbody>
+        </table>
+        <p class="price-note">Prisene gjelder én-til-én-undervisning på nett. Betaling skjer via Vipps-lenke som sendes etter gjennomført time; klippekort faktureres ved oppstart. Undervisningstjenester er som hovedregel unntatt fra merverdiavgift, og det beregnes derfor ikke mva på undervisning.</p>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="section-label">Innhold</div>
+        <h2>Hva undervisningen kan omfatte</h2>
+        <table class="content-table">
+            <tbody>
+                <tr><td class="content-label">Kartlegging</td><td>Vi avklarer elevens nivå, mål, utfordringer og tidshorisont.</td></tr>
+                <tr><td class="content-label">Individuell plan</td><td>Undervisningen legges opp etter hva eleven faktisk trenger, ikke bare neste tema i boka.</td></tr>
+                <tr><td class="content-label">Eksamensstrategi</td><td>Arbeid med oppgavetyper, vurderingskriterier, del 1/del 2, hjelpemidler og typiske eksamensgrep.</td></tr>
+                <tr><td class="content-label">Oppfølging mellom timer</td><td>Ved behov kan eleven sende oppgaver, spørsmål eller tidligere besvarelser som grunnlag for neste økt.</td></tr>
+                <tr><td class="content-label">Tilpassede oppgaver</td><td>Jeg kan velge ut eller lage oppgaver som treffer elevens nivå og forbedringsområder.</td></tr>
+                <tr><td class="content-label">Faglig status underveis</td><td>Etter noen økter kan vi vurdere hva som er styrket, hva som fortsatt bør prioriteres, og hvordan arbeidet bør legges opp videre.</td></tr>
+                <tr><td class="content-label">Privatisteksamen</td><td>Særlig aktuelt for elever som skal forbedre karakter, ta opp fag eller forberede seg mot eksamen.</td></tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
