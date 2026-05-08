@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kjetil Grunnvoll | Halv Mater</title>
+    <title>Forfattere | Halv Mater</title>
     <meta name="robots" content="noindex">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -63,80 +63,51 @@
             padding: 5.5rem 2rem 7rem;
         }
 
-        .back-link {
-            display: inline-block;
-            font-family: sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--text-light);
-            text-decoration: none;
-            margin-bottom: 4rem;
-        }
-
-        .back-link:hover { color: var(--text); }
-
-        .author-name {
-            font-size: 1.9rem;
-            font-weight: normal;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-        }
-
-        .author-genre {
-            font-family: sans-serif;
-            font-size: 0.78rem;
-            letter-spacing: 0.25em;
-            text-transform: uppercase;
-            color: var(--text-light);
-            margin-bottom: 3rem;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        .bio p {
-            font-size: 1rem;
-            line-height: 1.9;
-            color: var(--text);
-            margin-bottom: 1.4rem;
-        }
-
-        .bio p:last-child { margin-bottom: 0; }
-
-        .books-label {
+        .page-title {
             font-family: sans-serif;
             font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 0.22em;
             color: var(--text-light);
-            margin-bottom: 1.4rem;
+            margin-bottom: 2.5rem;
         }
 
-        .book-item {
-            padding: 1.1rem 0;
+        .authors-list {
+            list-style: none;
+        }
+
+        .authors-list li {
             border-bottom: 1px solid var(--border);
         }
 
-        .book-item:first-of-type { border-top: 1px solid var(--border); }
-
-        .book-item a {
-            text-decoration: none;
-            color: var(--text);
-            font-size: 1rem;
+        .authors-list li:first-child {
+            border-top: 1px solid var(--border);
         }
 
-        .book-item a:hover { text-decoration: underline; text-underline-offset: 3px; }
+        .authors-list a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 1.2rem 0;
+            text-decoration: none;
+            color: var(--text);
+            gap: 1rem;
+        }
 
-        .book-item-year {
+        .authors-list a:hover .author-name {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .author-name {
+            font-size: 1.05rem;
+        }
+
+        .author-genre {
             font-family: sans-serif;
             font-size: 0.75rem;
             color: var(--text-light);
-            margin-top: 0.2rem;
+            white-space: nowrap;
         }
 
         footer {
@@ -154,7 +125,7 @@
 
         @media (max-width: 540px) {
             main { padding: 3.5rem 1.5rem 5rem; }
-            .author-name { font-size: 1.45rem; }
+            .author-genre { display: none; }
         }
     </style>
 </head>
@@ -165,33 +136,34 @@
         <img src="../logo_banner.png" alt="Halv Mater" class="logo-banner">
     </a>
     <nav class="site-nav">
-        <a href="./" class="active">Forfattere</a>
+        <a href="." class="active">Forfattere</a>
     </nav>
 </header>
 
 <main>
 
-    <a href="../index.html" class="back-link">← Halv Mater</a>
+    <p class="page-title">Forfattere</p>
 
-    <h1 class="author-name">Kjetil Grunnvoll</h1>
-    <p class="author-genre">Poesi &nbsp;·&nbsp; Roman &nbsp;·&nbsp; Historiske romaner</p>
-
-    <hr>
-
-    <div class="bio">
-        <p>Kjetil Grunnvoll er dikter og romanforfatter. Han har en særegen evne til å finne det presise i det tilsynelatende hverdagslige – og til å la det åpne seg mot noe større. Hans lyrikk er kjent for sin lakoniske kraft og sin nærhet til det sansebare.</p>
-        <p>Som romanforfatter har Grunnvoll gravd seg ned i norsk og nordeuropeisk historie og funnet karakterer og hendelser som taler overraskende direkte til samtiden. Hans historiske romaner er grundig forankret i tid og sted, men drives like mye av stemning og indre liv som av ytre handling.</p>
-        <p>Grunnvoll bor og arbeider i Nord-Norge.</p>
-    </div>
-
-    <hr>
-
-    <p class="books-label">Utgivelser på Halv Mater</p>
-
-    <div class="book-item">
-        <a href="../index.html">Basaliteter</a>
-        <p class="book-item-year">Diktsamling &nbsp;·&nbsp; 2026</p>
-    </div>
+    <ul class="authors-list">
+        <li>
+            <a href="kjetil-grunnvoll.html">
+                <span class="author-name">Kjetil Grunnvoll</span>
+                <span class="author-genre">Poesi &nbsp;·&nbsp; Roman</span>
+            </a>
+        </li>
+        <li>
+            <a href="prins-eric-hamtorst.html">
+                <span class="author-name">Prins Eric Hamtørst</span>
+                <span class="author-genre">Poesi &nbsp;·&nbsp; Surrealisme</span>
+            </a>
+        </li>
+        <li>
+            <a href="elvira-madiganske.html">
+                <span class="author-name">Elvira Madiganske</span>
+                <span class="author-genre">Roman &nbsp;·&nbsp; Science fiction</span>
+            </a>
+        </li>
+    </ul>
 
 </main>
 

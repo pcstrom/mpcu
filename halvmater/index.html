@@ -25,15 +25,37 @@
         }
 
         header {
-            padding: 3rem 2rem 2.5rem;
+            padding: 2.5rem 2rem 0;
             text-align: center;
             border-bottom: 1px solid var(--border);
         }
 
-        .logo {
-            height: 120px;
+        .logo-banner {
+            display: block;
+            margin: 0 auto;
             width: auto;
+            max-width: min(420px, 88%);
         }
+
+        .site-nav {
+            margin-top: 2rem;
+            padding: 0.85rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .site-nav a {
+            font-family: sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--text-mid);
+        }
+
+        .site-nav a:hover { color: var(--text); }
 
         main {
             max-width: 660px;
@@ -190,59 +212,6 @@
         footer a { color: var(--text-light); text-decoration: none; }
         footer a:hover { color: var(--text); }
 
-        .authors-section {
-            margin-top: 5rem;
-            border-top: 1px solid var(--border);
-            padding-top: 3.5rem;
-        }
-
-        .authors-label {
-            font-family: sans-serif;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.22em;
-            color: var(--text-light);
-            margin-bottom: 1.8rem;
-        }
-
-        .authors-list {
-            list-style: none;
-        }
-
-        .authors-list li {
-            border-bottom: 1px solid var(--border);
-        }
-
-        .authors-list li:first-child {
-            border-top: 1px solid var(--border);
-        }
-
-        .authors-list a {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding: 1.1rem 0;
-            text-decoration: none;
-            color: var(--text);
-            gap: 1rem;
-        }
-
-        .authors-list a:hover .author-name {
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        .author-name {
-            font-size: 1rem;
-        }
-
-        .author-genre {
-            font-family: sans-serif;
-            font-size: 0.75rem;
-            color: var(--text-light);
-            white-space: nowrap;
-        }
-
         @media (max-width: 540px) {
             main { padding: 3.5rem 1.5rem 5rem; }
             .book-cover { width: 190px; }
@@ -255,7 +224,10 @@
 <body>
 
 <header>
-    <img src="logo.png" alt="Halv Mater" class="logo">
+    <img src="logo_banner.png" alt="Halv Mater" class="logo-banner">
+    <nav class="site-nav">
+        <a href="forfattere/">Forfattere</a>
+    </nav>
 </header>
 
 <main>
@@ -312,29 +284,6 @@
         </div>
     </div>
 
-    <div class="authors-section">
-        <p class="authors-label">Forfattere</p>
-        <ul class="authors-list">
-            <li>
-                <a href="forfattere/kjetil-grunnvoll.html">
-                    <span class="author-name">Kjetil Grunnvoll</span>
-                    <span class="author-genre">Poesi &nbsp;·&nbsp; Roman</span>
-                </a>
-            </li>
-            <li>
-                <a href="forfattere/prins-eric-hamtorst.html">
-                    <span class="author-name">Prins Eric Hamtørst</span>
-                    <span class="author-genre">Poesi &nbsp;·&nbsp; Surrealisme</span>
-                </a>
-            </li>
-            <li>
-                <a href="forfattere/elvira-madiganske.html">
-                    <span class="author-name">Elvira Madiganske</span>
-                    <span class="author-genre">Roman &nbsp;·&nbsp; Science fiction</span>
-                </a>
-            </li>
-        </ul>
-    </div>
 
 </main>
 
