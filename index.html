@@ -134,6 +134,11 @@
             border: 2px solid var(--border);
             box-shadow: 0 2px 10px rgba(46,40,32,0.12);
             flex-shrink: 0;
+            display: block;
+        }
+        .hero-photo-link {
+            display: flex;
+            align-self: center;
         }
 
         .stats {
@@ -437,16 +442,16 @@
         .footer-sep { margin: 0 0.5rem; }
 
         .nav-logo {
-            height: 32px;
+            height: 28px;
             width: auto;
-            vertical-align: middle;
             filter: brightness(0) invert(1);
             opacity: 0.88;
+            transform: translateY(2px);
         }
         .nav-left {
             display: flex;
             align-items: center;
-            gap: 0.65rem;
+            gap: 0.3rem;
         }
 
         .about-inner {
@@ -498,7 +503,7 @@
     <p class="hero-sub">Tydelige forklaringer, bedre struktur og tryggere problemløsning – med lang erfaring som matematikklærer og privatunderviser.</p>
     <div class="hero-cta-row">
         <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" class="btn btn-large" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill din første time med Per Christian →</a>
-        <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero-photo'})"><img src="profilbilde1.jpeg" alt="Per Christian" class="hero-photo"></a>
+        <a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener" class="hero-photo-link" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero-photo'})"><img src="profilbilde1.jpeg" alt="Per Christian" class="hero-photo"></a>
     </div>
     <span class="hero-note">Online via Teams eller Google Meet &nbsp;·&nbsp; Tilpasses ditt nivå og dine mål</span>
 </section>
