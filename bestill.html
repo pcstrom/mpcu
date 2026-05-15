@@ -127,11 +127,15 @@
             padding: 1.5rem;
         }
         .step-screenshot.featured img {
+            width: 100%;
             max-width: 420px;
+            height: auto;
             margin: 0 auto;
         }
         .step-screenshot.compact img {
+            width: 100%;
             max-width: 280px;
+            height: auto;
         }
         .caption {
             margin-top: 0.7rem;
@@ -223,7 +227,11 @@
             main { padding: 3rem 1.5rem 4rem; }
             h1 { font-size: 1.6rem; }
             .step { gap: 0.8rem; }
+            .step-screenshot { padding: 0.7rem; }
+            .step-screenshot.featured { padding: 0.7rem; }
             .step-screenshot.compact img { max-width: 100%; }
+            nav { padding: 0.8rem 1rem; }
+            .nav-brand-logo { height: 36px; margin-left: 0; transform: none; }
         }
     </style>
 </head>
