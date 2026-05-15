@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserver time – Strøm Epitecphro | mpcu.no</title>
-    <meta name="description" content="Slik bestiller du time hos Per Christian Strøm – kort forklaring av bookingflyten.">
+    <meta name="description" content="Slik bestiller du time hos Per Christian Strøm – trinnvis forklaring av bookingflyten.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEXQ3YTYLW"></script>
     <script>
@@ -56,7 +56,7 @@
         nav a.back-link:hover { color: white; }
 
         main {
-            max-width: 680px;
+            max-width: 760px;
             margin: 0 auto;
             padding: 4rem 2rem 5rem;
         }
@@ -69,12 +69,13 @@
         .lead {
             font-size: 1.15rem;
             color: var(--text-light);
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
         }
+
         .step {
             display: flex;
             gap: 1.2rem;
-            margin-bottom: 1.8rem;
+            margin-bottom: 2.5rem;
             align-items: flex-start;
         }
         .step-num {
@@ -91,36 +92,67 @@
             font-size: 0.95rem;
         }
         .step-body { flex: 1; padding-top: 0.15rem; }
-        .step-body p { margin: 0; }
+        .step-body h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .step-body p { margin: 0 0 0.8rem; }
         .step-body strong { color: var(--text); }
 
-        .screenshot-wrap {
-            margin: 2.5rem 0;
-            padding: 1.5rem;
+        .step-screenshot {
+            margin-top: 0.8rem;
+            padding: 1rem;
             background: var(--bg-warm);
-            border-radius: 8px;
+            border-radius: 6px;
             border: 1px solid var(--border);
-            text-align: center;
+            display: inline-block;
+            max-width: 100%;
         }
-        .screenshot-wrap img {
+        .step-screenshot img {
             max-width: 100%;
             height: auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 12px rgba(46,40,32,0.12);
+            display: block;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(46,40,32,0.1);
         }
-        .screenshot-caption {
-            margin-top: 1rem;
-            font-size: 0.92rem;
+        .step-screenshot.featured {
+            display: block;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .step-screenshot.featured img {
+            max-width: 420px;
+            margin: 0 auto;
+        }
+        .step-screenshot.compact img {
+            max-width: 280px;
+        }
+        .caption {
+            margin-top: 0.7rem;
+            font-size: 0.88rem;
             color: var(--text-light);
             font-family: sans-serif;
+            font-style: italic;
         }
-        .screenshot-caption strong {
+        .caption strong {
             color: var(--accent);
             font-weight: 600;
+            font-style: normal;
         }
 
+        .warning {
+            background: #fbf3e8;
+            border-left: 3px solid var(--accent);
+            padding: 0.8rem 1rem;
+            margin: 0.8rem 0;
+            font-size: 0.97rem;
+            font-family: sans-serif;
+            border-radius: 0 4px 4px 0;
+        }
+        .warning strong { color: var(--accent); }
+
         .cta-section {
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             text-align: center;
             padding: 2.5rem 1.5rem;
             background: var(--dark);
@@ -182,6 +214,8 @@
         @media (max-width: 600px) {
             main { padding: 3rem 1.5rem 4rem; }
             h1 { font-size: 1.6rem; }
+            .step { gap: 0.8rem; }
+            .step-screenshot.compact img { max-width: 100%; }
         }
     </style>
 </head>
@@ -194,31 +228,59 @@
 
 <main>
     <h1>Reserver time</h1>
-    <p class="lead">Bestilling skjer i Microsofts kalendersystem. Her er det du trenger å vite på forhånd – det tar kun et par minutter.</p>
+    <p class="lead">Bestilling skjer i Microsofts kalendersystem. Her er en kort gjennomgang av flyten – det tar bare et par minutter, men det er greit å vite hva du møter underveis.</p>
 
     <div class="step">
         <div class="step-num">1</div>
         <div class="step-body">
-            <p>Klikk på <strong>«Reserver time nå»</strong> nederst på siden.</p>
+            <h3>Start bestillingen</h3>
+            <p>Klikk på <strong>«Reserver time nå»</strong>-knappen nederst på siden. Du sendes til Microsofts bookingside.</p>
         </div>
     </div>
 
     <div class="step">
         <div class="step-num">2</div>
         <div class="step-body">
-            <p>Du kommer til en innloggingsside fra Microsoft. Velg <strong>«Fortsett som gjest»</strong> – du trenger ikke logge inn med Feide eller annen konto.</p>
+            <h3>Velg «Fortsett som gjest»</h3>
+            <p>Du kommer til en innloggingsside fra Microsoft med to valg. Velg det <strong>nederste</strong>: «Fortsett som gjest».</p>
+            <div class="warning"><strong>OBS:</strong> Du skal <strong>ikke</strong> logge inn med Feide eller annen konto. Bare velg «Fortsett som gjest».</div>
+            <div class="step-screenshot featured">
+                <img src="bestill-skjermbilde.png" alt="Microsoft Bookings innloggingsside med 'Fortsett som gjest'-valg nederst">
+                <p class="caption">Velg <strong>«Fortsett som gjest»</strong> nederst.</p>
+            </div>
         </div>
-    </div>
-
-    <div class="screenshot-wrap">
-        <img src="bestill-skjermbilde.png" alt="Microsoft Bookings innloggingsside med 'Fortsett som gjest'-valg">
-        <p class="screenshot-caption">Velg det <strong>nederste</strong> alternativet: «Fortsett som gjest».</p>
     </div>
 
     <div class="step">
         <div class="step-num">3</div>
         <div class="step-body">
-            <p>Velg ønsket tidspunkt i kalenderen, fyll inn navn og kontaktinfo, og bekreft. Du får en bekreftelse på e-post med Teams- eller Google Meet-lenke.</p>
+            <h3>Velg tidspunkt og fyll inn navn og e-post</h3>
+            <p>Velg et passende tidspunkt i kalenderen. Deretter fyller du inn navn og e-postadresse, og kan eventuelt skrive en kort notat (f.eks. fag eller hva du ønsker hjelp med).</p>
+            <div class="step-screenshot compact">
+                <img src="bestill-skrivinfo.png" alt="Skjema for å fylle inn navn, e-post og eventuelle notater">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+            <h3>Bekreft e-postadressen med kode</h3>
+            <p>Microsoft sender en bekreftelseskode til e-postadressen du oppga. Skriv den inn for å fullføre bestillingen.</p>
+            <div class="step-screenshot compact">
+                <img src="bekreft-tilsendt-kode.png" alt="Felt for å skrive inn bekreftelseskode mottatt på e-post">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+            <h3>Ferdig – timen er reservert</h3>
+            <p>Du får en bekreftelse på e-post med Teams-lenke og lenke for å endre tidspunkt eller avlyse timen.</p>
+            <div class="step-screenshot compact">
+                <img src="time-reservert.png" alt="Bekreftelse: Timen er reservert">
+            </div>
         </div>
     </div>
 
