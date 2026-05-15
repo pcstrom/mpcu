@@ -71,6 +71,7 @@
         }
         .btn:hover { background: var(--accent-h); transform: translateY(-1px); }
         .btn-large { padding: 0.9rem 2.2rem; font-size: 1rem; }
+        .nowrap { white-space: nowrap; }
 
         .hero {
             background: var(--bg-warm);
@@ -527,7 +528,7 @@
     <h1>Privatundervisning i matematikk<br>for videregående skole</h1>
     <p class="hero-sub">Tydelige forklaringer, bedre struktur og tryggere problemløsning – med lang erfaring som matematikklærer og privatunderviser.</p>
     <div class="hero-cta-row">
-        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill din første time med Per Christian →</a>
+        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill din første time med <span class="nowrap">Per Christian →</span></a>
         <a href="bestill.html" class="hero-photo-link" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero-photo'})"><img src="profilbilde1_red.jpg" alt="Per Christian" class="hero-photo"></a>
     </div>
     <span class="hero-note">Online via Teams eller Google Meet &nbsp;·&nbsp; Tilpasses ditt nivå og dine mål</span>
