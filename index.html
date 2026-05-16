@@ -117,6 +117,22 @@
             color: var(--text-light);
             font-family: sans-serif;
         }
+        .hero-freebie {
+            display: inline-block;
+            margin-top: 1.1rem;
+            font-family: sans-serif;
+            font-size: 0.93rem;
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent);
+            padding-bottom: 2px;
+            transition: color 0.15s, border-color 0.15s;
+        }
+        .hero-freebie:hover {
+            color: var(--accent-h);
+            border-bottom-color: var(--accent-h);
+            border-bottom-style: solid;
+        }
 
         .hero-contact-mobile {
             display: none;
@@ -547,9 +563,10 @@
     <h1>Privatundervisning i matematikk<br>for videregående skole</h1>
     <p class="hero-sub">Tydelige forklaringer, bedre struktur og tryggere problemløsning – med lang erfaring som matematikklærer og privatunderviser.</p>
     <div class="hero-cta-row">
-        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Bestill time med <span class="nowrap">Per Christian →</span></a>
+        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero'})">Reserver time med <span class="nowrap">Per Christian →</span></a>
         <a href="bestill.html" class="hero-photo-link" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero-photo'})"><img src="profilbilde1_red.jpg" alt="Per Christian" class="hero-photo"></a>
     </div>
+    <a href="bestill.html" class="hero-freebie" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'hero-freebie'})">Eller start med en gratis 20-min avklaringssamtale →</a>
     <span class="hero-note">Online via Teams eller Google Meet &nbsp;·&nbsp; Tilpasses ditt nivå og dine mål</span>
     <div class="hero-contact-mobile">
         <a href="tel:+4799031130">📞 99 03 11 30</a>
@@ -704,8 +721,8 @@
 <section class="cta-bottom">
     <div class="container">
         <h2>Klar til å komme i gang?</h2>
-        <p>Bestill en time direkte i kalenderen min – vi starter der du er og lager en plan videre.</p>
-        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'cta-bunn'})">Bestill time nå →</a>
+        <p>Reserver en time direkte i kalenderen min – vi starter der du er og lager en plan videre.</p>
+        <a href="bestill.html" class="btn btn-large" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'cta-bunn'})">Reserver time nå →</a>
     </div>
 </section>
 
