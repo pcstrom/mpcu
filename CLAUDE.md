@@ -1,10 +1,12 @@
 # mpcu-nettside — prosjektoversikt
 
-Dette repoet inneholder to separate nettsider for Per Christian Strøm, begge hostet via GitHub Pages fra repoet `pcstrom/mpcu`.
+Dette repoet inneholder nettsiden for Per Christians matematikkundervisningsvirksomhet, hostet via GitHub Pages på domenet **mpcu.no**.
+
+> Halv Mater forlag har egen repo (`pcstrom/halvmater`) og eget domene (**halvmater.no**) — flyttet ut mai 2026. Se `~/Desktop/halvmater-nettside/`.
 
 ---
 
-## 1. mpcu.no — matematikkundervisning
+## mpcu.no — matematikkundervisning
 
 **Mappe:** `./` (rotmappen)  
 **Filer:** `index.html`, `takk.html`, `salgsvilkar.html`  
@@ -69,48 +71,6 @@ Betaling: Vipps-lenke sendes etter gjennomført time. Klippekort faktureres ved 
 - Per Christians navn brukes i CTA-knapper for å myke opp og personliggjøre («Bestill din første time med Per Christian →»)
 - Firmanavnet Strøm Epitecphro brukes i nav og footer for profesjonelt inntrykk
 - Neste naturlige steg: logo og eventuelt bedre profilbilde
-
----
-
-## 2. Halv Mater — forlag
-
-**Mappe:** `./halvmater/`  
-**Domene:** ikke eget domene ennå — tilgjengelig som `mpcu.no/halvmater/`  
-**Inspirasjonsreferanse:** Fitzcarraldo Editions — minimalistisk, litterær estetikk
-
-### Innhold
-- Forsiden viser gjeldende utgivelse: **Basaliteter av Kjetil Grunnvoll** (diktsamling, 329 kr / 479 kr bok+CD)
-- Bestilling via Vipps (99031130) og e-post (utsyn@mpcu.no)
-- Nav: Forfattere | Musikk | Anmeldelser
-
-### Filstruktur
-```
-halvmater/
-  index.html               ← forsiden (Basaliteter)
-  basaliteter.jpg          ← bokbilde (midlertidig)
-  forfattere/
-    index.html
-    kjetil-grunnvoll.html
-    prins-eric-hamtorst.html   ← fiktiv
-    elvira-madiganske.html     ← fiktiv
-  musikk/
-    index.html             ← to album av Henrik Bazaar & Kjetil Grunnvoll
-  anmeldelser/
-    index.html
-    avisa-nordland.html    ← «Kortreiste dikt med lang rekkevidde»
-    utsidens-dyd.html      ← «Utsidens dyd» (essayistisk lesning)
-    vinduet.html           ← «Det halvfortærte»
-```
-
-### Design
-- Lys, varm bakgrunn: `--bg: #faf9f6`, `--text: #1c1c1a`, `--border: #e0dbd4`
-- Sabon-font via Adobe Fonts/Typekit: `<link rel="stylesheet" href="https://use.typekit.net/ukh3stv.css">`
-- Logo: teksten «Halv Mater» i Sabon uppercase med `letter-spacing: 0.35em` (ikke bildefil)
-- Minimalistisk layout, maks 660px bredde
-- På forsiden er site-title en `<span>` (ikke lenke); på undersider er det `<a href="../index.html">`
-
-### Viktig: plassering av filer
-Alle filer som skal brukes på nettsiden **må ligge i `halvmater/`-mappen**. Mappen `mpcu-forlag/` på skrivebordet er et lokalt arbeidsarkiv — ikke del av repoet.
 
 ---
 
