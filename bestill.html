@@ -6,6 +6,7 @@
     <title>Reserver time – Strøm Epitecphro | mpcu.no</title>
     <meta name="description" content="Slik reserverer du time hos Per Christian Strøm – trinnvis forklaring av bookingflyten.">
     <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" href="https://use.typekit.net/ukh3stv.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEXQ3YTYLW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -29,7 +30,7 @@
             margin: 0;
             background: var(--bg);
             color: var(--text);
-            font-family: Georgia, serif;
+            font-family: 'linotype-sabon', Georgia, serif;
             line-height: 1.65;
         }
         nav {
@@ -69,7 +70,21 @@
         .lead {
             font-size: 1.15rem;
             color: var(--text-light);
+            margin-bottom: 1.2rem;
+        }
+        .direct-link {
             margin-bottom: 3rem;
+            font-family: sans-serif;
+            font-size: 0.93rem;
+        }
+        .direct-link a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent);
+            padding-bottom: 1px;
+        }
+        .direct-link a:hover {
+            border-bottom-style: solid;
         }
 
         .step {
@@ -238,13 +253,14 @@
 <body>
 
 <nav>
-    <a href="index.html"><img src="fakturaheader.svg" alt="Strøm Epitecphro" class="nav-brand-logo"></a>
+    <a href="index.html"><img src="logo.svg" alt="Strøm Epitecphro" class="nav-brand-logo"></a>
     <a href="index.html" class="back-link">← Tilbake</a>
 </nav>
 
 <main>
-    <h1>Reserver time</h1>
+    <h1>Hvordan reservere time</h1>
     <p class="lead">Reservasjonen skjer i Microsofts kalendersystem. Her er en kort gjennomgang av flyten – det tar bare et par minutter, men det er greit å vite hva du møter underveis.</p>
+    <p class="direct-link"><a href="https://outlook.office.com/bookwithme/user/791a7a23e38f4585b57d53923348e6c2@mpcu.no?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener" onclick="gtag('event','booking_click',{'event_category':'booking','event_label':'bestill-direktelenke'})">Hopp over forklaringen – gå direkte til kalenderen →</a></p>
 
     <div class="step">
         <div class="step-num">1</div>
