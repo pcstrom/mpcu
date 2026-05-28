@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpcu.no/sitemap.xml
