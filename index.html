@@ -59,7 +59,7 @@
 
         .btn {
             display: inline-block;
-            background: #8b4242;
+            background: var(--dark);
             color: white;
             padding: 0.55rem 1.3rem;
             border-radius: 0;
@@ -70,8 +70,9 @@
             letter-spacing: 0.06em;
             transition: background 0.18s;
         }
-        .btn:hover { background: #6b3232; }
-        .btn-large { padding: 0.9rem 2.2rem; font-size: 1rem; }
+        .btn:hover { background: var(--dark-mid); }
+        .btn-large { padding: 0.9rem 2.2rem; font-size: 1rem; background: #8b4242; }
+        .btn-large:hover { background: #6b3232; }
         .nowrap { white-space: nowrap; }
 
         .hero {
