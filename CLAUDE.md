@@ -23,11 +23,9 @@ Nettside for Per Christians privatundervisningsvirksomhet i matematikk. Målgrup
 | Tjeneste | Pris |
 |---|---|
 | Avklaringssamtale, inntil 20 min | Gratis |
-| Undervisning, 60 min | 750 kr |
-| Undervisning, 90 min | 1 100 kr |
-| Eksamensrettet intensivøkt, 120 min | 1 450 kr |
-| Klippekort 5 × 60 min | 3 600 kr |
-| Klippekort 10 × 60 min | 7 000 kr |
+| Undervisning, 60 min | 700 kr |
+| Undervisning, 90 min | 1 000 kr |
+| Klippekort 5 × 60 min | 3 300 kr |
 
 Betaling: Vipps-lenke sendes etter gjennomført time. Klippekort faktureres ved oppstart. Ingen mva på undervisning.
 
