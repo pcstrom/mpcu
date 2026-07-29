@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Lokal verktøykonfigurasjon (dev-server o.l.) - hører ikke hjemme på GitHub
+.claude/
+
+# Forretningsdokumenter som tilfeldigvis ligger i denne mappa, men IKKE er
+# en del av nettsiden - siden lenker til personvernerklæringen på SharePoint,
+# ikke til en lokal fil. De skal derfor ikke publiseres med repoet.
+Personvernerklæring_*.pdf
+Salgsvilkar_*.docx
+oppfolgingskort_*.pdf
